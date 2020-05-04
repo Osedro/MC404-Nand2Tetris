@@ -12,3 +12,64 @@
 // the screen should remain fully clear as long as no key is pressed.
 
 // Put your code here.
+(init)
+@KDB
+D = M
+@branco
+D;JEQ
+//preto
+@i
+M = 0
+@8192
+D = A
+@tam
+M = D
+(loopp)
+@i
+D = M
+@tam
+D = D - M
+@init
+D; JEQ
+@SCREEN
+D = A
+@i
+D = D + M
+A = D
+M = -1
+@i
+M = M + 1
+@loopp
+0; JMP
+//branco
+(branco)
+@i
+M = 0
+@8192
+D = A
+@tam
+M = D
+(loopb)
+@i
+D = M
+@tam
+D = D - M
+@init
+D; JEQ
+@SCREEN
+D = A
+@i
+A = D + M
+M = 0
+@i
+M = M + 1
+@loopb
+0; JMP
+
+
+
+
+
+
+
+
