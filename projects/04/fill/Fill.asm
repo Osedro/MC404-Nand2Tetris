@@ -13,11 +13,11 @@
 
 // Put your code here.
 (init)
-@KDB
+@KBD
 D = M
 @branco
 D;JEQ
-//preto
+
 @i
 M = 0
 @8192
@@ -41,7 +41,6 @@ M = -1
 M = M + 1
 @loopp
 0; JMP
-//branco
 (branco)
 @i
 M = 0
